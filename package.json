@@ -1,0 +1,48 @@
+{
+  "name": "@emartech/rabbitmq-queue-manager",
+  "version": "0.0.0-development",
+  "description": "Helper library to easily add worker messages into queue",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha setup-tests.spec.js lib --recursive",
+    "code-style": "eslint src/",
+    "validate-commit-msg": "validate-commit-msg",
+    "semantic-release": "semantic-release"
+  },
+  "pre-commit": [
+    "code-style",
+    "validate-commit-msg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emartech/node-rabbitmq-queue-manager.git"
+  },
+  "author": "Emarsys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emartech/node-rabbitmq-queue-manager/issues"
+  },
+  "homepage": "https://github.com/emartech/node-rabbitmq-queue-manager#readme",
+  "dependencies": {
+    "@emartech/rabbitmq-client": "2.3.0",
+    "config": "1.29.2"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "eslint": "4.16.0",
+    "eslint-config-emarsys": "4.0.0",
+    "eslint-plugin-no-only-tests": "2.0.0",
+    "eslint-plugin-require-path-exists": "1.1.7",
+    "eslint-plugin-security": "1.4.0",
+    "mocha": "5.0.0",
+    "pre-commit": "1.2.2",
+    "semantic-release": "12.2.4",
+    "sinon": "4.2.1",
+    "sinon-chai": "2.14.0",
+    "validate-commit-message": "3.0.1"
+  }
+}
